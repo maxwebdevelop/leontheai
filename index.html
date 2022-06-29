@@ -55,7 +55,7 @@
             <h3>NOTIFICATION</h3>
             <div class="notification-container">
                 <div class="welcomeBackMaxText">
-                <p>WELCOME BACK</p>
+                <p id="randomGeneratedGreeting"> </p>
                 </div>
                 <div class="onlineDisplay">
                 <p class="onlineStatus" id="online_Status"></p>
@@ -63,29 +63,29 @@
                 <div class="leonType">
                     <p class="prototype"><spam class="type">LEON TYPE: </spam>P R O T O T Y P E</p>
                 </div>
-
-                <div class="footer">
-                    <spam class="systamName"> // LEON OS # <span id="rnadomNumber"></span> //////////////////</spam>
-                </div>
             </div>
         </div>
     </section>
-
 
     <section class="middleWidgets" id="middle_widget">
-        <div class="displayAdvice">
-            <h3>RANDOM ADVICE</h3>
-            <p id="randomadvice"></p>
-        </div>
+        <div class="displaySchedule">
+            <h3>S C H E D U L E</h3>
+            <div id="schedule">
 
-        <div class="map">
-            <div class="mapCordinates">
-            <h3>MAP</h3>
-            <h6 id="cordinates"></h6>
             </div>
+        </div>
+        <div class="spotify">
+            <h3>S P O T I F Y</h3>
+            <div id="errorDisplay">
+                <p id="error"></p>
+            </div>
+            <div id="spotify">
 
-            <spam class="dot" id="displayDot"></spam>
-            <img src="world.png" width="300">
+            </div>
+            <div class="LeonInput">
+                <input type="text" id="Leonrequests" >
+                <button onclick="fetchspotify()" id="buttonTalk">Search</button>
+            </div>
         </div>
     </section>
 
@@ -93,38 +93,26 @@
 
 
 
+<!-- Make dragable widgets -->
+
+<section id="dangerWidgetToDisplay">
+    <div id="dangerWidget">
+        <h1>/ / / / - D A N G E R - / / / /</h1>
+        <h3 id="dangerLevel"></h3>
+        <p id="stepsToTake"></p>
+    </div>
+</section>
 
 
 
-
-
-
-
-
-
-<!-- WIDGETS TO THROW -->
-    <section class="dangerWidget" id="danger_WIdget">
-        <div>
-            <h2>/ / /  - D A N G E R -  / / /</h2>
-            <h6 id="small">S M A L L</h6>
-            <h6 id="medium">M E D I U M</h6>
-            <h6 id="extreme">E X T R E M E</h6>
-            <h6 id="city"></h6>
-        </div>
-
-        <div>
-            <p id="discription"></p>
-        </div>
-    </section>
 
 
 
 <script src="index.js"></script>
-<script src="spotifyFetch.js"></script>
 <script src="offlineoronline.js"></script>
-<script src="generateRandomNumber.js"></script>
-<script src="randomAdviceAPI.js"></script>
-<script src="displayingLocation.js"></script>
-<script src="widgetdisplay.js"></script>
+<script src="redirect.js"></script>
+<script src="scheduleAPI.js"></script>
+<script src="youtubeFetch.js"></script>
+<script src="dragableElements.js"></script>
 </body> 
 </html>

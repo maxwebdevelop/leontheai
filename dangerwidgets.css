@@ -1,29 +1,14 @@
-.dangerWidget{
-    margin: 0;
+#dangerWidgetToDisplay{
+    display: none;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none;
-    width: 30%;
-    background-color: transparent;
-    border: 0.3px solid #c72c41;
+    width: 40%;
 }
 
-.dangerWidget h2{
-    color: red;
-    opacity: 0.8;
-    font-weight: normal;
-    text-align: center;
-}
-
-.dangerWidget h6{
-    color: red;
-    opacity: 0.8;
-    font-weight: normal;
-    text-align: center;
-}
-
-#small, #medium, #extreme{
-    display: none
+#dangerWidgetToDisplay #dangerWidget{
+    padding: 20px;
+   text-align: center;
+   background-color: rgb(228, 65, 65);
 }
